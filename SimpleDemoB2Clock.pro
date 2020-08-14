@@ -11,6 +11,6 @@ SOURCES += main.cpp
 RESOURCES += qml.qrc
 
 # Default rules for deployment.
-qnx: target.path = /tmp/b2open/bin
-else: unix:!android: target.path = /opt/b2open/bin
+qnx: target.path = /usr/bin
+else: unix:!android: target.path = /usr/bin
 !isEmpty(target.path): INSTALLS += target
